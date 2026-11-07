@@ -1,0 +1,1 @@
+# revive-auto-detail
