@@ -38,10 +38,14 @@
   .btn{padding:11px 9px;font-size:7px;}
 }
 
-/* Desktop hero photograph: illuminated glow behind the REVIVE lettering in the workshop image */
+/* Localised backlight for the REVIVE wall sign in the hero photograph */
 @media(min-width:721px){
-  .hero:before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:radial-gradient(ellipse 34% 24% at 50% 48%,rgba(255,255,255,.30) 0%,rgba(226,235,246,.18) 28%,rgba(190,207,226,.08) 52%,transparent 76%);filter:blur(20px);opacity:.78;animation:revivePhotoGlow 4.6s ease-in-out infinite}
-  @keyframes revivePhotoGlow{0%,100%{opacity:.48;transform:scale(.96)}50%{opacity:.9;transform:scale(1.04)}}
+  .hero:before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:
+    radial-gradient(ellipse 58% 25% at 51% 51%,rgba(242,247,255,.34) 0%,rgba(224,235,248,.22) 27%,rgba(190,207,229,.10) 52%,transparent 76%),
+    radial-gradient(ellipse 66% 13% at 51% 48%,rgba(255,255,255,.16) 0%,rgba(218,231,247,.08) 42%,transparent 74%),
+    linear-gradient(180deg,transparent 36%,rgba(221,233,248,.055) 49%,transparent 65%);
+    filter:blur(17px);opacity:.72;mix-blend-mode:screen;animation:reviveSignBacklight 5.2s ease-in-out infinite}
+  @keyframes reviveSignBacklight{0%,100%{opacity:.48;filter:blur(19px)}50%{opacity:.88;filter:blur(14px)}}
 }
 </style></head><body><div class="topline"></div>
 <header><div class="wrap nav"><a class="brand" href="#top"><img src="revive%20logo.jpg" alt="Revive Auto Detail logo"><span class="brand-name">REVIVE <small>AUTO DETAIL</small></span></a><nav class="links"><a href="#services">Services</a><a href="#approach">Our approach</a><a href="#work">Gallery</a></nav><a class="cta" href="#contact">Enquire now <span class="revive-mark" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none"><path d="M6.5 1.5H1.5V6.5M11.5 1.5H16.5V6.5M16.5 11.5V16.5H11.5M6.5 16.5H1.5V11.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/><path d="M9 6.1L11.9 9L9 11.9L6.1 9L9 6.1Z" stroke="currentColor" stroke-width="1.1"/></svg></span></a></div></header>
